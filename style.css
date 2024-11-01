@@ -1,0 +1,73 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Estilo Mobile-First (para telas pequenas) */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem;
+  }
+  
+  .conteudo-principal, .barra-lateral {
+    background-color: #f4f4f4;
+    padding: 1rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+  }
+/* Estilos para Telas Maiores (Desktop) */
+@media (min-width: 768px) {
+    header nav ul {
+      flex-direction: row;
+    }
+    
+    main {
+      flex-direction: row;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    
+    .conteudo-principal {
+      flex: 2;
+    }
+  
+    .barra-lateral {
+      flex: 1;
+    }
+  }
+    
